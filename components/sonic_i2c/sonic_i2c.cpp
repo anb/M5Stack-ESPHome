@@ -18,7 +18,7 @@ float SonicI2C::getDistance(){
     uint8_t val = 0x01 ;
     this->write( &val, 1);
     
-    delay(120);
+    delay(55);
     uint8_t data_buffer[]={0,0,0,0,0};
     
     this->read(data_buffer,3);
